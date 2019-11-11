@@ -43,7 +43,9 @@ public class HelloControllerIT {
     public void getHello() throws  Exception{
         ResponseEntity<String> responseEntity=testRestTemplate.getForEntity(base.toString(), String.class );
         //assertThat(responseEntity.getBody(), equalTo("Greetings from Spring Boot!"));
+        //上面的方法是官网的，但是不知道为什么没有通过，下面是在博客里找的
         assertThat(responseEntity.getBody()).isEqualTo("This is new bird!");
+
     }
 
 }
