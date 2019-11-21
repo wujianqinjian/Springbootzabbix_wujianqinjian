@@ -15,6 +15,8 @@ public class HelloWeChat {
     @Autowired
     WeChat weChat;
 
+
+
  /*   @Value("${wxtestmessage}")
     private String wxtestmessage;*/
 

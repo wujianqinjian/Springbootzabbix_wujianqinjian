@@ -9,6 +9,7 @@ import springboot.beanothertest.WeChatOther;
 public class HelloWeChatS {
     WeChat weChat;
     WeChatOther weChatOther;
+
     //启动主程序
     public static void main(String[] args){
         SpringApplication.run(HelloWeChatS.class, args);
