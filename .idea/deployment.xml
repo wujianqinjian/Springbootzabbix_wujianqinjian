@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="lu1H1G_956_106.54.140.151">
+    <serverData>
+      <paths name="lu1H1G_956_106.54.140.151">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/usr/local/src" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="shang2H4G_422_49.235.207.16">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/usr/local/src" local="$PROJECT_DIR$/centos" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="shang2H8G_422_123.206.224.131">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="公司测试">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
