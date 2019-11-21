@@ -1,0 +1,69 @@
+#wechat:
+#  chats:
+#    imageUrl:  url1${random.int}
+#    title: ${wechat.chats.imageUrl}_title1${wechat.chats.imagUrl:消息错误}
+#    newest: ${sksk:"这个变量有错吧,微信最多应该只显示":}${random.int(99)}条消息
+#  contacts:
+#    imageUrl: ${random.value}contact1
+#    nickName: ${random.int(2222)}fanrui
+#  discovers:
+#    moments: ${random.long(999)}moments
+#  me:
+#    weChatNickName: .
+#    getWeChatId: miao***
+#    weChatPay: weChatPay
+#    favorites: favorites
+#    myPosts: myPosts
+#    cardsAndOffers: cardsAndOffers
+#    stickerAndGallery: stickerAndGallery
+#    settings: setting
+#spring:
+#  profiles:
+#    active: dev
+#
+#
+#---
+#wechat:
+#  chats:
+#    imageUrl:  url2222${random.int}
+#    title: ${wechat.chats.imageUrl}_title1${wechat.chats.imagUrl:消息错误}
+#    newest: ${sksk:"这个变量有错吧,微信最多应该只显示":}${random.int(99)}条消息
+#  contacts:
+#    imageUrl: ${random.value}contact1
+#    nickName: ${random.int(2222)}fanrui
+#  discovers:
+#    moments: ${random.long(999)}moments
+#  me:
+#    weChatNickName: .
+#    getWeChatId: miao***
+#    weChatPay: weChatPay
+#    favorites: favorites
+#    myPosts: myPosts
+#    cardsAndOffers: cardsAndOffers
+#    stickerAndGallery: stickerAndGallery
+#    settings: setting
+#spring:
+#  profiles: dev
+#
+#---
+#wechat:
+#  chats:
+#    imageUrl:  url3${random.int}
+#    title: ${wechat.chats.imageUrl}_title1${wechat.chats.imagUrl:消息错误}
+#    newest: ${sksk:"这个变量有错吧,微信最多应该只显示":}${random.int(99)}条消息
+#  contacts:
+#    imageUrl: ${random.value}contact1
+#    nickName: ${random.int(2222)}fanrui
+#  discovers:
+#    moments: ${random.long(999)}moments
+#  me:
+#    weChatNickName: .
+#    getWeChatId: miao***
+#    weChatPay: weChatPay
+#    favorites: favorites
+#    myPosts: myPosts
+#    cardsAndOffers: cardsAndOffers
+#    stickerAndGallery: stickerAndGallery
+#    settings: setting
+#spring:
+#  profiles: test
