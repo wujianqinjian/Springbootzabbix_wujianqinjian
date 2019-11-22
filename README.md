@@ -16,3 +16,5 @@
         - 在gitbash中使用git config --global sendpack.sideband false；使用后下载速度提升，
           但过一会就会减速（无效）
         - **将项目转到gitee（码云）上，从码云上clone下来，然后在idea中修改远程推送地址！(有效)**
+        - idea底部控制台选择“terminal，
+          执行 git remote set-url origin https://github.com/wujianqinjian/Springbootzabbix_wujianqinjian。
