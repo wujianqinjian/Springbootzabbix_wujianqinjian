@@ -10,7 +10,8 @@
     2. 检查秘钥文件，秘钥和github上公钥一致
     3. 检查网络问题，开启代理和关闭代理效果一致，均无法clone，可能与网络无关
     4. 使用gitbash进行clone，速度仅为几KB每秒，排除idea设置可能
-    5. 通过QQ群和微信群征询意见，获取以下几张方案：
+    5. 修改hosts，刷新DNS（无效）
+    6. 通过QQ群和微信群征询意见，获取以下几张方案：
         - 设置git使用代理（无效）
         - 在gitbash中使用git config --global sendpack.sideband false；使用后下载速度提升，
           但过一会就会减速（无效）
