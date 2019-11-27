@@ -16,9 +16,9 @@ public class SpringSl4jTest {
 
         @Test
         public void context(){
-            logger.trace("trace日志");
+            logger.trace("trace日志trace日志");
             logger.debug("debug日志");
-            logger.info("info日志");
+            logger.info("info日志info日志info日志info");
             logger.warn("warn日志");
             logger.error("error日志");
         }

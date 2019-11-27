@@ -1,3 +1,9 @@
+logging:
+  level: {
+           new: "debug"
+  }
+
+
 #wechat:
 #  chats:
 #    imageUrl:  url1${random.int}
@@ -66,4 +72,7 @@
 #    stickerAndGallery: stickerAndGallery
 #    settings: setting
 #spring:
+spring:
+  profiles:
+    active: dev
 #  profiles: test
