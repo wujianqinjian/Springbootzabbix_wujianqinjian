@@ -10,11 +10,17 @@
     <appender name="adevelops" class="ch.qos.logback.core.ConsoleAppender">
         <!-- encoders are assigned the type
              ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
-        <encoder>
+        <!--<encoder>
             <pattern>%d{HH:mm} [%thread] %-5level %logger{36} - %msg%n</pattern>
-        </encoder>
+        </encoder>-->
+        <springProfile name="!news">
+            <encoder>
+                <pattern>%d{HH} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            </encoder>
+        </springProfile>
     </appender>
-    <root level="debug">
-        <appender-ref ref="STDOUT" />
+    <root level="trace">
+        <appender-ref ref="adevelops" />
+
     </root>
 </configuration>
