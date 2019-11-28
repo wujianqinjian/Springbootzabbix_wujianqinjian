@@ -1,7 +1,33 @@
+
+spring:
+  profiles:
+    active:
+
+---
+
+server:
+  port: 8081
+spring:
+    profiles: online
+
+---
+server:
+  port: 8082
+
+spring:
+  profiles: test
+---
+
+server:
+  port: 8083
+spring:
+  profiles: dev
+
 logging:
   level: {
-           new: "debug"
+           root: "trace"
   }
+
 
 
 #wechat:
@@ -71,8 +97,5 @@ logging:
 #    cardsAndOffers: cardsAndOffers
 #    stickerAndGallery: stickerAndGallery
 #    settings: setting
-#spring:
-spring:
-  profiles:
-    active: dev
+#spring
 #  profiles: test

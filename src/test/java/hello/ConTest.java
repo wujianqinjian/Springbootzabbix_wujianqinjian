@@ -11,6 +11,7 @@ import springboot.HelloWeChatS;
 import springboot.bean.WeChat;
 import springboot.beanothertest.WeChatOther;
 import springboot.beanothertest.WeChatplaceholder;
+import zabbix.bean.Zabbix;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = HelloWeChatS.class)
@@ -24,10 +25,9 @@ public class ConTest {
     WeChatplaceholder weChatplaceholder;
     @Autowired
     ApplicationContext applicationContext;
-
         @Test
         public void testweChat(){
-            System.out.println(weChat);
+            System.out.println("_____");
         }
 
 

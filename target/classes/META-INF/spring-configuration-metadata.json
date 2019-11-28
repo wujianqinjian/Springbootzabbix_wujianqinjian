@@ -1,0 +1,237 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "springboot.bean.Chats",
+      "name": "chats",
+      "type": "springboot.bean.Chats"
+    },
+    {
+      "sourceType": "springboot.bean.Contacts",
+      "name": "contacts",
+      "type": "springboot.bean.Contacts"
+    },
+    {
+      "sourceType": "springboot.bean.Discovers",
+      "name": "discovers",
+      "type": "springboot.bean.Discovers"
+    },
+    {
+      "sourceType": "springboot.bean.Me",
+      "name": "me",
+      "type": "springboot.bean.Me"
+    },
+    {
+      "sourceType": "springboot.bean.WeChat",
+      "name": "wechat",
+      "type": "springboot.bean.WeChat"
+    },
+    {
+      "sourceType": "springboot.beanothertest.WeChatOther",
+      "name": "wechats",
+      "type": "springboot.beanothertest.WeChatOther"
+    },
+    {
+      "sourceType": "springboot.beanothertest.WeChatplaceholder",
+      "name": "wechatsplaceholder",
+      "type": "springboot.beanothertest.WeChatplaceholder"
+    },
+    {
+      "sourceType": "zabbix.bean.Zabbix",
+      "name": "zabbix",
+      "type": "zabbix.bean.Zabbix"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "springboot.bean.Chats",
+      "name": "chats.image-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Chats",
+      "name": "chats.newest",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Chats",
+      "name": "chats.title",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Contacts",
+      "name": "contacts.image-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Contacts",
+      "name": "contacts.nick-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Discovers",
+      "name": "discovers.games",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Discovers",
+      "name": "discovers.mini-programs",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Discovers",
+      "name": "discovers.moments",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Discovers",
+      "name": "discovers.people-nearby",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Discovers",
+      "name": "discovers.scan",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Discovers",
+      "name": "discovers.search",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Discovers",
+      "name": "discovers.shake",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Discovers",
+      "name": "discovers.top-stories",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Me",
+      "name": "me.cards-and-offers",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Me",
+      "name": "me.favorites",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Me",
+      "name": "me.get-we-chat-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Me",
+      "name": "me.my-posts",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Me",
+      "name": "me.settings",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Me",
+      "name": "me.sticker-and-gallery",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Me",
+      "name": "me.we-chat-nick-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.Me",
+      "name": "me.we-chat-pay",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "springboot.bean.WeChat",
+      "name": "wechat.chats",
+      "type": "springboot.bean.Chats"
+    },
+    {
+      "sourceType": "springboot.bean.WeChat",
+      "name": "wechat.contacts",
+      "type": "springboot.bean.Contacts"
+    },
+    {
+      "sourceType": "springboot.bean.WeChat",
+      "name": "wechat.discovers",
+      "type": "springboot.bean.Discovers"
+    },
+    {
+      "sourceType": "springboot.bean.WeChat",
+      "name": "wechat.me",
+      "type": "springboot.bean.Me"
+    },
+    {
+      "sourceType": "springboot.beanothertest.WeChatOther",
+      "name": "wechats.chats",
+      "type": "springboot.bean.Chats"
+    },
+    {
+      "sourceType": "springboot.beanothertest.WeChatOther",
+      "name": "wechats.contacts",
+      "type": "springboot.bean.Contacts"
+    },
+    {
+      "sourceType": "springboot.beanothertest.WeChatOther",
+      "name": "wechats.discovers",
+      "type": "springboot.bean.Discovers"
+    },
+    {
+      "sourceType": "springboot.beanothertest.WeChatOther",
+      "name": "wechats.me",
+      "type": "springboot.bean.Me"
+    },
+    {
+      "sourceType": "springboot.beanothertest.WeChatOther",
+      "name": "wechats.tmptest",
+      "type": "java.util.List<java.lang.String>"
+    },
+    {
+      "sourceType": "springboot.beanothertest.WeChatplaceholder",
+      "name": "wechatsplaceholder.chats",
+      "type": "springboot.bean.Chats"
+    },
+    {
+      "sourceType": "springboot.beanothertest.WeChatplaceholder",
+      "name": "wechatsplaceholder.contacts",
+      "type": "springboot.bean.Contacts"
+    },
+    {
+      "sourceType": "springboot.beanothertest.WeChatplaceholder",
+      "name": "wechatsplaceholder.discovers",
+      "type": "springboot.bean.Discovers"
+    },
+    {
+      "sourceType": "springboot.beanothertest.WeChatplaceholder",
+      "name": "wechatsplaceholder.me",
+      "type": "springboot.bean.Me"
+    },
+    {
+      "sourceType": "springboot.beanothertest.WeChatplaceholder",
+      "name": "wechatsplaceholder.tmptest",
+      "type": "java.util.List<java.lang.String>"
+    },
+    {
+      "sourceType": "zabbix.bean.Zabbix",
+      "name": "zabbix.host",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "zabbix.bean.Zabbix",
+      "name": "zabbix.pass-word",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "zabbix.bean.Zabbix",
+      "name": "zabbix.user-name",
+      "type": "java.lang.String"
+    }
+  ]
+}
