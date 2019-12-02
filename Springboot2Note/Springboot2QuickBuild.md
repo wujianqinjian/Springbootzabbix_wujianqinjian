@@ -1,7 +1,7 @@
 #####  通过向导快速创建Spring-boot项目
 ##### 创建步骤：
 1. 选择Spring Initializr
-![](https://github.com/wujianqinjian/ImageRep/blob/master/Springboot2/springbootOne/1.png)
+![](Springboot2/springbootOne/4.png)
 2. 填写组织和模块名
 
 3. 选择对应的模块
