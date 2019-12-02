@@ -8,7 +8,7 @@
    注：这里左侧的模块比较多，玩家可以根据自己的实际需要自由选择，此处暂时选择web
    
 4. 完成
-
+![](https://github.com/wujianqinjian/ImageRep/blob/master/Springboot2/springbootOne/4.png)
 5. 等待项目自动下载相关依赖完成项目创建
 **注:项目类型为maven的话，需要配置阿里云仓库才不会特别慢**
    setting.xml
