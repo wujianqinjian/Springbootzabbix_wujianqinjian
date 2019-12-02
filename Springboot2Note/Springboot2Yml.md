@@ -49,7 +49,9 @@ weixin:
 ```
 
 4. **yml的对象写法：“我”模块中包含着用户的昵称、头像、支付、相册等，可以当做一个对象来处理。**
+
 ![](https://github.com/wujianqinjian/ImageRep/blob/master/Springboot2/Springboot2Yml/5.png)
+
 ```yml
 me:
     wxNickName: .
