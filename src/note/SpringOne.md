@@ -4,7 +4,7 @@ Spring-boot(一)通过向导快速创建Spring-boot项目
 #####  通过向导快速创建Spring-boot项目
 ##### 创建步骤：
 1. 选择Spring Initializr
-
+!()[https://github.com/wujianqinjian/ImageRep/blob/master/Springboot2/springbootOne/1.png?raw=true]
 2. 填写组织和模块名
 3. 选择对应的模块
    注：这里左侧的模块比较多，玩家可以根据自己的实际需要自由选择，此处暂时选择web
