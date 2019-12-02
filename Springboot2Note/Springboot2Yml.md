@@ -37,7 +37,9 @@ weixin:
 
 
 3. **yml的 数组写法：微信的发现表面看很明显是一个List**
+
 ![](https://github.com/wujianqinjian/ImageRep/blob/master/Springboot2/Springboot2Yml/4.png)
+
 ```yml
   #  第一种数组写法
   find-list: [moments,Scan QR Code,Shake]
