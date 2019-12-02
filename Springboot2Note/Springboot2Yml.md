@@ -4,10 +4,14 @@ Spring-boot(二)通过微信熟悉熟悉Spring-boot yml配置文件
 ##### 前言：Spring-boot的yml配置文件，这里就不在借助人、狗介绍了，试试套下微信!
 ##### 创建yml文件
 - **值得注意的是下图中有三种命名方法，前两种是对的，且第二种必须是横线而不是下划线！**
+
 ![](https://github.com/wujianqinjian/ImageRep/blob/master/Springboot2/Springboot2Yml/1.png)
+
 1. **yml文件的基本语法：由键值对和空格组成**
 - 值得注意的是：作为yml的固定格式，如wxmessage、contacts这样的键后面，都需要加一个空格
+
 ![](https://github.com/wujianqinjian/ImageRep/blob/master/Springboot2/Springboot2Yml/2.png)
+
 ```yml
 weixin:
         wxmessage: message
@@ -23,7 +27,9 @@ weixin:
   比如：contacts :{image_qiankui: "百人钱坤",** image_qianmo: "百人阡陌"*}，
   **那么很有可能是配置文件的类型和实际映射的实体类型不一致，即：在java文件里定义了
   一个属性：private Contacts contacts，实体却定义成Map类型，就会出错或者值为null**
+  
 ![](https://github.com/wujianqinjian/ImageRep/blob/master/Springboot2/Springboot2Yml/3.png)
+
 ```yml
 weixin:
         contacts :{image_qiankui: "百人钱坤",image_qianmo: "百人阡陌",}
