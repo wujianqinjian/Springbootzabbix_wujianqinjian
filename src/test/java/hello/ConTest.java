@@ -27,7 +27,7 @@ public class ConTest {
     ApplicationContext applicationContext;
         @Test
         public void testweChat(){
-            System.out.println("_____");
+            System.out.println(weChat);
         }
 
 

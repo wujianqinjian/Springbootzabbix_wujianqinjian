@@ -17,9 +17,19 @@
       "type": "springboot.bean.Discovers"
     },
     {
+      "sourceType": "traditional.bean.Dog",
+      "name": "dog",
+      "type": "traditional.bean.Dog"
+    },
+    {
       "sourceType": "springboot.bean.Me",
       "name": "me",
       "type": "springboot.bean.Me"
+    },
+    {
+      "sourceType": "traditional.bean.Person",
+      "name": "person",
+      "type": "traditional.bean.Person"
     },
     {
       "sourceType": "springboot.bean.WeChat",
@@ -109,6 +119,16 @@
       "type": "java.lang.String"
     },
     {
+      "sourceType": "traditional.bean.Dog",
+      "name": "dog.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "traditional.bean.Dog",
+      "name": "dog.name",
+      "type": "java.lang.String"
+    },
+    {
       "sourceType": "springboot.bean.Me",
       "name": "me.cards-and-offers",
       "type": "java.lang.String"
@@ -147,6 +167,41 @@
       "sourceType": "springboot.bean.Me",
       "name": "me.we-chat-pay",
       "type": "java.lang.String"
+    },
+    {
+      "sourceType": "traditional.bean.Person",
+      "name": "person.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "traditional.bean.Person",
+      "name": "person.birth",
+      "type": "java.util.Date"
+    },
+    {
+      "sourceType": "traditional.bean.Person",
+      "name": "person.boss",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "traditional.bean.Person",
+      "name": "person.dog",
+      "type": "traditional.bean.Dog"
+    },
+    {
+      "sourceType": "traditional.bean.Person",
+      "name": "person.last-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "traditional.bean.Person",
+      "name": "person.lists",
+      "type": "java.util.List<java.lang.String>"
+    },
+    {
+      "sourceType": "traditional.bean.Person",
+      "name": "person.maps",
+      "type": "java.util.Map<java.lang.String,java.lang.String>"
     },
     {
       "sourceType": "springboot.bean.WeChat",

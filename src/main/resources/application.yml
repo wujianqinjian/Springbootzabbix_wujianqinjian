@@ -1,7 +1,7 @@
 
 spring:
   profiles:
-    active:
+    active: online
 
 ---
 
@@ -9,6 +9,23 @@ server:
   port: 8081
 spring:
     profiles: online
+person:
+  lastName: wujianqinjian
+  age: 18
+  boss: false
+  birth: 1988/11/06
+  maps:
+    {k1: ss,k2: ss}
+  lists:
+     - wujianqinjianListOne
+     - wujianqinjianListSecond
+     - wujianqinjianListThird
+  dog:
+    name: wangcai
+    age: 1
+
+
+
 
 ---
 server:
