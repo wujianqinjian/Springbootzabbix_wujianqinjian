@@ -12,7 +12,7 @@ public class Me {
     private String favorites;
     private String myPosts;
     private String cardsAndOffers;
-    private String stickerAndGallery;
+    private String stickerGallery;
     private String settings;
 
     @Override
@@ -24,7 +24,7 @@ public class Me {
                 ", favorites='" + favorites + '\'' +
                 ", myPosts='" + myPosts + '\'' +
                 ", cardsAndOffers='" + cardsAndOffers + '\'' +
-                ", stickerAndGallery='" + stickerAndGallery + '\'' +
+                ", stickerGallery='" + stickerGallery + '\'' +
                 ", settings='" + settings + '\'' +
                 '}';
     }
@@ -77,12 +77,12 @@ public class Me {
         this.cardsAndOffers = cardsAndOffers;
     }
 
-    public String getStickerAndGallery() {
-        return stickerAndGallery;
+    public String getStickerGallery() {
+        return stickerGallery;
     }
 
-    public void setStickerAndGallery(String stickerAndGallery) {
-        this.stickerAndGallery = stickerAndGallery;
+    public void setStickerGallery(String stickerGallery) {
+        this.stickerGallery = stickerGallery;
     }
 
     public String getSettings() {
