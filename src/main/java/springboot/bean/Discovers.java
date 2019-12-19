@@ -13,19 +13,19 @@ public class Discovers {
     private String topStories;
     private String search;
     private String peopleNearby;
-    private String Games;
+    private String games;
     private String miniPrograms;
 
     @Override
     public String toString() {
-        return "Discover{" +
+        return "Discovers{" +
                 "moments='" + moments + '\'' +
                 ", scan='" + scan + '\'' +
                 ", shake='" + shake + '\'' +
                 ", topStories='" + topStories + '\'' +
                 ", search='" + search + '\'' +
                 ", peopleNearby='" + peopleNearby + '\'' +
-                ", Games='" + Games + '\'' +
+                ", games='" + games + '\'' +
                 ", miniPrograms='" + miniPrograms + '\'' +
                 '}';
     }
@@ -79,11 +79,11 @@ public class Discovers {
     }
 
     public String getGames() {
-        return Games;
+        return games;
     }
 
     public void setGames(String games) {
-        Games = games;
+        this.games = games;
     }
 
     public String getMiniPrograms() {
