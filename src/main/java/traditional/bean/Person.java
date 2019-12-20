@@ -1,16 +1,24 @@
 package traditional.bean;
 
+
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
+
 import org.springframework.stereotype.Component;
-import traditional.bean.Dog;
+import org.springframework.validation.annotation.Validated;
+
 
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-
 @Component
+//confiugurationProperties(prefix="person")
+//仅仅开启了自动配置，如果想读取到propertySource中的配置文件，
+//必须ConfigurationProperties和PropertySource同时声明
 @ConfigurationProperties(prefix="person")
+@PropertySource("classpath:person.properties")
+@Validated
 public class Person {
     private String lastName;
     private Integer age;
@@ -20,7 +28,6 @@ public class Person {
     private Map<String,String> maps;
     private List<String> lists;
     private Dog dog;
-
 
     @Override
     public String toString() {

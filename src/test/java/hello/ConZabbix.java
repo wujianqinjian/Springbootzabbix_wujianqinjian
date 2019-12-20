@@ -18,14 +18,20 @@ import zabbix.bean.Zabbix;
 @SpringBootTest(classes = HelloZabbix.class)
 public class ConZabbix {
 
-    @Autowired
-    WeChatplaceholder weChatplaceholder;
+  /*  @Autowired
+    WeChatplaceholder weChatplaceholder;*/
     @Autowired
     ApplicationContext applicationContext;
     @Autowired
     Zabbix zabbix;
+
+
+
         @Test
         public void testweChat(){
+            Boolean bp=applicationContext.containsBean("getPort");
+            String bps=bp.toString();
+            System.out.println(bps);
             System.out.println(zabbix);
         }
 

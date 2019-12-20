@@ -12,13 +12,10 @@ import traditional.bean.Person;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = HelloPerson.class)
 public class SpringbootPersonTest {
-
-
     @Autowired
     Person person;
     @Autowired
     Dog dog;
-
 
     @Test
     public void testPerson(){

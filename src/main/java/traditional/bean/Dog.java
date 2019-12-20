@@ -1,14 +1,16 @@
 package traditional.bean;
 
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties(prefix = "dog")
+//@ConfigurationProperties(prefix = "dog")
 public class Dog {
-
+    //@Value("${person.dog.name}")
     private String name;
+    @Value("#{1*2}")
     private Integer age;
 
     @Override
