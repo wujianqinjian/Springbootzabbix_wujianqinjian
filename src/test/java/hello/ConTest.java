@@ -7,11 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
-import springboot.HelloWeChatS;
-import springboot.bean.WeChat;
-import springboot.beanothertest.WeChatOther;
-import springboot.beanothertest.WeChatplaceholder;
-import zabbix.bean.Zabbix;
+import wechat.HelloWeChatS;
+import wechat.bean.WeChat;
+import wechat.beanothertest.WeChatOther;
+import wechat.beanothertest.WeChatplaceholder;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = HelloWeChatS.class)

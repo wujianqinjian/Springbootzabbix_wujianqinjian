@@ -7,10 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
-import springboot.HelloWeChatS;
-import springboot.bean.WeChat;
-import springboot.beanothertest.WeChatOther;
-import springboot.beanothertest.WeChatplaceholder;
 import zabbix.HelloZabbix;
 import zabbix.bean.Zabbix;
 
