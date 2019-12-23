@@ -5,7 +5,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
-@PropertySource(value={"classpath:zabbix.properties"})
+@PropertySource(value={"classpath:config/zabbix.properties"})
 @Component
 @ConfigurationProperties(prefix = "zabbix")
 public class Zabbix {

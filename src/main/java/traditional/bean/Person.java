@@ -17,7 +17,7 @@ import java.util.Map;
 //仅仅开启了自动配置，如果想读取到propertySource中的配置文件，
 //必须ConfigurationProperties和PropertySource同时声明
 @ConfigurationProperties(prefix="person")
-@PropertySource("classpath:person.properties")
+@PropertySource("classpath:config/person.properties")
 @Validated
 public class Person {
     private String lastName;

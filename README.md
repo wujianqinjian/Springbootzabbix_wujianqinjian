@@ -18,3 +18,14 @@
         - **将项目转到gitee（码云）上，从码云上clone下来，然后在idea中修改远程推送地址！(有效)**
           idea底部控制台选择“terminal，
           执行 git remote set-url origin https://github.com/wujianqinjian/Springbootzabbix_wujianqinjian。
+          
+          
+       
+       
+##### 目录结构说明：
+   1. /config/application.properties
+- 日志配置
+- 端口配置
+- 生效环境配置
+
+      

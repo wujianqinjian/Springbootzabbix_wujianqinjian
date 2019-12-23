@@ -12,7 +12,11 @@ import javax.validation.constraints.NotNull;
 
 
 @Component
-@ConfigurationProperties(prefix = "wechat")
+//confiugurationProperties(prefix="person")
+//仅仅开启了自动配置，如果想读取到propertySource中的配置文件，
+//必须ConfigurationProperties和PropertySource同时声明
+@ConfigurationProperties(prefix="wechat")
+@PropertySource("classpath:config/wechat.properties")
 @Validated
 public class WeChat {
     private Chats chats;
