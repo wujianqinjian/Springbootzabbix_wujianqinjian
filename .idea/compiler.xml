@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Springbootzabbix_wujianqinjian" />
         <module name="new" />
+        <module name="Springbootzabbix_wujianqinjian" />
         <module name="Springboot.zabbix_wujianqinjian" />
       </profile>
     </annotationProcessing>
