@@ -1,6 +1,0 @@
-
-
-
-wechatName: 微信
-
-wxtestmessage: 这是一个微信的测试信息，用来验证Value单独取值

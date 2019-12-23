@@ -29,7 +29,7 @@ public class HelloWeChat {
     }*/
     @RequestMapping("/wxhello")
     public String sayHello() {
-        return "您好" + wechatName + "欢迎你"+ "/n"+weChat;
+        return "您好" +"\n"+ wechatName+"\n" + "欢迎你"+ "\n"+weChat;
     }
 
 }

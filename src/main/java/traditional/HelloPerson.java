@@ -15,6 +15,7 @@ public class HelloPerson {
     Person person;
 
     public static void main(String[] args) {
+        System.out.println("");
         SpringApplication.run(HelloPerson.class);
     }
 }

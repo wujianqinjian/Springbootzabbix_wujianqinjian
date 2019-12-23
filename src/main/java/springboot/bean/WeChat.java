@@ -25,10 +25,10 @@ public class WeChat {
     @Override
     public String toString() {
         return "WeChat{" +
-                "chats=" + chats +
-                ", contacts=" + contacts +
-                ", discovers=" + discovers +
-                ", me=" + me +
+                "chats=" + chats +"\n"+
+                ", contacts=" + contacts +"\n"+
+                ", discovers=" + discovers +"\n"+
+                ", me=" + me+"\n" +
                 '}';
     }
 
