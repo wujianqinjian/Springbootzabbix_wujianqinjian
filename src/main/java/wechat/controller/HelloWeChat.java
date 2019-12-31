@@ -25,13 +25,7 @@ public class HelloWeChat {
     private String wxtestmessage;*/
 
 
-//    }
-/*
-    @RequestMapping("/wxtestmessage")
-    public String wxtestmessage() {
-        return wxtestmessage;
-    }*/
-    @ResponseBody
+    //@ResponseBody
     @RequestMapping("/helloWechat")
     public String sayHello() throws Exception {
         Logger logger=LoggerFactory.getLogger(getClass());
@@ -42,5 +36,11 @@ public class HelloWeChat {
         System.out.println("-----------------------------------------------------");
         return "您好" +"\n"+ wechatName+"\n" + "欢迎你"+ "\n"+weChat;
     }
+/*
+    @RequestMapping({"/login","/"})
+    public String login(){
+        return "login";
+    }*/
+
 
 }

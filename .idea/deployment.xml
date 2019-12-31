@@ -12,8 +12,11 @@
       <paths name="shang2H4G_422_49.235.207.16">
         <serverdata>
           <mappings>
-            <mapping deploy="/usr/local/src" local="$PROJECT_DIR$/centos" web="/" />
+            <mapping deploy="/usr/local/src" local="$PROJECT_DIR$/target" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath path="/" />
+          </excludedPaths>
         </serverdata>
       </paths>
       <paths name="shang2H8G_422_123.206.224.131">

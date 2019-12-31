@@ -10,7 +10,7 @@ import traditional.bean.Dog;
 import traditional.bean.Person;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = HelloPerson.class)
+@SpringBootTest(classes = TraditionalPerson.class)
 public class SpringbootPersonTest {
     @Autowired
     Person person;
