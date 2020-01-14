@@ -2,6 +2,8 @@ package wechat.bean;
 
 
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
@@ -10,9 +12,9 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "chats")
 public class Chats {
 
-    private String imageUrl;
-    private String title;
-    private String newest;
+    @Getter @Setter private String imageUrl;
+    @Getter @Setter private String title;
+    @Getter @Setter private String newest;
 
 
     @Override
@@ -23,7 +25,7 @@ public class Chats {
                 ", newest='" + newest + '\'' +
                 '}';
     }
-
+/*
     public String getImageUrl() {
         return imageUrl;
     }
@@ -46,5 +48,5 @@ public class Chats {
 
     public void setNewest(String newest) {
         this.newest = newest;
-    }
+    }*/
 }

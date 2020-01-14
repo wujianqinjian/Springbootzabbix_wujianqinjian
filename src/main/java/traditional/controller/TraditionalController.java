@@ -2,6 +2,7 @@ package traditional.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.Mapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -28,6 +29,7 @@ public class TraditionalController {
     @RequestMapping("/fanta")
     public String fanta(Map<String,Object> map) {
         map.put("fanta","<h1>Hi,Fanta,游泳、吃饭？还有啥感兴趣的？</h1>");
+
         return "fanta";
     }
 

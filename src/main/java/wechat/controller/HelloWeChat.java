@@ -25,7 +25,7 @@ public class HelloWeChat {
     private String wxtestmessage;*/
 
 
-    //@ResponseBody
+    @ResponseBody
     @RequestMapping("/helloWechat")
     public String sayHello() throws Exception {
         Logger logger=LoggerFactory.getLogger(getClass());

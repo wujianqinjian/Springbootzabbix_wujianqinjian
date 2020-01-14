@@ -8,9 +8,12 @@ import org.springframework.stereotype.Component;
 import org.springframework.validation.annotation.Validated;
 
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import lombok.Getter;
+import lombok.Setter;
 
 @Component
 //confiugurationProperties(prefix="person")
@@ -19,15 +22,15 @@ import java.util.Map;
 @ConfigurationProperties(prefix="person")
 @PropertySource("classpath:config/person.properties")
 @Validated
-public class Person {
-    private String lastName;
-    private Integer age;
-    private Boolean boss;
-    private Date birth;
+public class Person implements Serializable {
+    @Getter @Setter private String lastName;
+    @Getter @Setter private Integer age;
+    @Getter @Setter private Boolean boss;
+    @Getter @Setter private Date birth;
 
-    private Map<String,String> maps;
-    private List<String> lists;
-    private Dog dog;
+    @Getter @Setter private Map<String,String> maps;
+    @Getter @Setter private List<String> lists;
+    @Getter @Setter private Dog dog;
 
     @Override
     public String toString() {
@@ -42,6 +45,27 @@ public class Person {
                 '}';
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
     public String getLastName() {
         return lastName;
     }
@@ -97,4 +121,4 @@ public class Person {
     public void setDog(Dog dog) {
         this.dog = dog;
     }
-}
+*/
