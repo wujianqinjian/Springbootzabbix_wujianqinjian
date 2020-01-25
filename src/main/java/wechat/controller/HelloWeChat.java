@@ -36,11 +36,21 @@ public class HelloWeChat {
         System.out.println("-----------------------------------------------------");
         return "您好" +"\n"+ wechatName+"\n" + "欢迎你"+ "\n"+weChat;
     }
-/*
+
     @RequestMapping({"/login","/"})
     public String login(){
         return "login";
-    }*/
+    }
+
+    @RequestMapping({"/index","/"})
+    public String index(){
+        return "index";
+    }
+
+    @RequestMapping("/fanta")
+    public String fanta(){
+        return "fanta";
+    }
 
 
 }

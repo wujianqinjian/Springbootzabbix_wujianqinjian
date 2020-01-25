@@ -33,6 +33,7 @@ public class WeChat {
                 '}';
     }
 
+
     public Chats getChats() {
         return chats;
     }
