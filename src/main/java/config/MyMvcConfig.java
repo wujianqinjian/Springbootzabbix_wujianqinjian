@@ -24,9 +24,10 @@ public class MyMvcConfig  implements WebMvcConfigurer {
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("index").setViewName("index");
+/*        registry.addViewController("index").setViewName("index");
         registry.addViewController("login").setViewName("login");
         //registry.addViewController("/thymeleaf").setViewName("thymeleaf");
-        registry.addViewController("/fanta").setViewName("fanta");
+            registry.addViewController("/fanta").setViewName("login");
+        registry.addViewController("/").setViewName("login");*/
     }
 }
