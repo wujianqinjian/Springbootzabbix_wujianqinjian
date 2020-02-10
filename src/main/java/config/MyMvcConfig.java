@@ -1,6 +1,6 @@
 package config;
 
-import Component.MyLocalResolver;
+//import Component.MyLocalResolver;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.LocaleResolver;
@@ -27,8 +27,8 @@ public class MyMvcConfig  implements WebMvcConfigurer {
         InterceptorRegistration index = registry.addInterceptor(new IndexHandlerInterceptor()).addPathPatterns("/**").excludePathPatterns("indexSuccess.html","/static/**","/", "/index.html", "/index");
     }*/
 
-    @Bean
+    /*@Bean
     public LocaleResolver localeResolver(){
         return new MyLocalResolver();
-    }
+    }*/
 }

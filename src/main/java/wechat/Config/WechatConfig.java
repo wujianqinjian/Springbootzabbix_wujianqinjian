@@ -1,11 +1,13 @@
 package wechat.Config;
 
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import Component.MyLocalResolver;
 
 
 //标识改类是一个配置类，可用来替换配置文件
@@ -25,6 +27,13 @@ public class WechatConfig implements WebMvcConfigurer {
         registry.addViewController("/login").setViewName("login");
         registry.addViewController("/chatsAdmin.html").setViewName("chatsmessage");
     }
+
+    @Bean
+    public LocaleResolver localeResolver(){
+        return new MyLocalResolver();
+    }
+
+
 
 /*
     @Override
