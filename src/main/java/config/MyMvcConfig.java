@@ -1,16 +1,11 @@
 package config;
 
+import Component.MyLocalResolver;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.LocaleResolver;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.config.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.util.Locale;
 
 @Configuration
 public class MyMvcConfig  implements WebMvcConfigurer {
@@ -24,10 +19,16 @@ public class MyMvcConfig  implements WebMvcConfigurer {
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-/*        registry.addViewController("index").setViewName("index");
-        registry.addViewController("login").setViewName("login");
-        //registry.addViewController("/thymeleaf").setViewName("thymeleaf");
-            registry.addViewController("/fanta").setViewName("login");
-        registry.addViewController("/").setViewName("login");*/
+        registry.addViewController("/index.html").setViewName("index");
+    }
+
+/*    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        InterceptorRegistration index = registry.addInterceptor(new IndexHandlerInterceptor()).addPathPatterns("/**").excludePathPatterns("indexSuccess.html","/static/**","/", "/index.html", "/index");
+    }*/
+
+    @Bean
+    public LocaleResolver localeResolver(){
+        return new MyLocalResolver();
     }
 }

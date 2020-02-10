@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Signin Template · Bootstrap</title>
+    <title>wujianqinjian(樊瑞) Lab</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/sign-in/">
 
@@ -46,21 +46,28 @@
     -->
   </head>
   <body class="text-center">
-    <form class="form-signin">
-  <img class="mb-4" th:src="@{/static/img/bootstrap-solid.svg}" alt="" width="72" height="72">
-  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-  <label for="inputEmail" class="sr-only">Email address</label>
-  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-  <label for="inputPassword" class="sr-only">Password</label>
-  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-  <div class="checkbox mb-3">
-    <label>
-      <input type="checkbox" value="remember-me"> Remember me
-    </label>
-  </div>
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-  <p class="mt-5 mb-3 text-muted">© 2017-2019</p>
-</form>
+    <form class="form-signin" action="fanta.html" th:action="@{/index}" method="post">
+          <img class="mb-4" th:src="@{/static/img/bullterrier.png}" alt="" width="72" height="72">
+          <h1 class="h3 mb-3 font-weight-normal" th:text="#{index.tip}">Please sign in</h1>
+          <p th:text="${message}" th:if="${#strings.isEmpty(messages)}"></p>
+          <!--<label for="inputEmail" class="sr-only">Email address</label>-->
+          <label class="sr-only"  name="username" th:text="#{index.username}">Username</label>
+          <!--<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">-->
+          <input type="text" name="username" class="form-control" placeholder="Username" th:placeholder="#{index.username}" required="" autofocus="">
+          <!--<label for="inputPassword" class="sr-only">Password</label>-->
+          <label class="sr-only" th:text="#{index.password}">Password</label>
+          <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" th:placeholder="#{index.password}" required="">
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> [[#{index.remember}]]
+            </label>
+          </div>
+          <button class="btn btn-lg btn-primary btn-block" th:text="#{index.btn}" type="submit">Sign in</button>
+          <p class="mt-5 mb-3 text-muted">© 2017-2019</p>
+          <!--这里的index不能带html，否则页面会报错 -->
+          <a class="btn btn-sm" th:href="@{/index(languageVar='en_US')}">English</a>
+          <a class="btn btn-sm" th:href="@{/index(languageVar='zh_CN')}">中文</a>
+    </form>
 
 
 <div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;">

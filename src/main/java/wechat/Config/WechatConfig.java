@@ -1,7 +1,6 @@
 package wechat.Config;
 
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -22,15 +21,17 @@ public class WechatConfig implements WebMvcConfigurer {
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/fanta1").setViewName("index");
-        registry.addViewController("/testlogin").setViewName("login");
-        registry.addViewController("/").setViewName("index");
+        registry.addViewController("/").setViewName("login");
+        registry.addViewController("/login").setViewName("login");
+        registry.addViewController("/chatsAdmin.html").setViewName("chatsmessage");
     }
 
+/*
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-
+        registry.addInterceptor(new IndexHandlerInterceptor()).addPathPatterns("/**").excludePathPatterns("/chatsmessage","/chatsmessage.html","/static/**","/","/login.html","/login");
     }
+*/
 
     /*    @RequestMapping("/testHelloWeChat")
     @Bean
