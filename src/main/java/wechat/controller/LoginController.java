@@ -19,7 +19,7 @@ public class LoginController {
             session.setAttribute("online",username);
             //return "fanta";  输入验证完成后，跳转到成功页面，为了防止表单重复提交，这里需要使用下一行重定向
             //return "chatsmessage";
-            return "redirect:/chatsAdmin.html";
+            return "redirect:/chatsAdmin";
         }else {
             map.put("message","用户名或密码错误");
             return "login";

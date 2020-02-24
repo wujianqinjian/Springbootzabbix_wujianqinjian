@@ -7,6 +7,9 @@ import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
+import java.util.HashMap;
+import java.util.Map;
+
 
 @Component
 @ConfigurationProperties(prefix = "chats")
@@ -16,6 +19,13 @@ public class Chats {
     @Getter @Setter private String title;
     @Getter @Setter private String newest;
 
+    public Chats(){}
+
+    public Chats(String imageUrl, String title, String newest) {
+        this.imageUrl = imageUrl;
+        this.title = title;
+        this.newest = newest;
+    }
 
     @Override
     public String toString() {
@@ -25,6 +35,14 @@ public class Chats {
                 ", newest='" + newest + '\'' +
                 '}';
     }
+
+
+
+
+
+
+
+
 /*
     public String getImageUrl() {
         return imageUrl;
