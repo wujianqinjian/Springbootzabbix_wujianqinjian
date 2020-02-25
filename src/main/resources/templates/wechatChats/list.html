@@ -53,11 +53,12 @@
 				</li>
 			</ul>
 		</nav>-->
+	    <!-- 引入顶部-->
 		<div th:replace="~{commons/bar::loginedUserName}"></div>
-
 		<div class="container-fluid">
 			<div class="row">
-				<div th:replace="commons/bar::#sidebarFD"></div>
+				<!--引入侧边栏 -->
+				<div th:replace="commons/bar::#sidebarFD(activeUrl='wechatChats')"></div>
 				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
 					<h2>Section title</h2>
 					<div class="table-responsive">
