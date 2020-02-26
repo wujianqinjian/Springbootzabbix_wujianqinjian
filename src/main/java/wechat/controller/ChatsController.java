@@ -5,7 +5,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import wechat.bean.Chats;
+import wechat.bean.WeChat;
 import wechat.crud.dao.ChatsDao;
+import wechat.dao.WechatDao;
 
 import java.util.Collection;
 
@@ -14,11 +16,14 @@ public class ChatsController {
 
     @Autowired
     ChatsDao chatsDao;
+    @Autowired
+    WechatDao wechatDao;
 
     @GetMapping("/wechatChats")
     public String list(Model model){
-        Collection<Chats> chatses=chatsDao.getAll();
-        model.addAllAttributes(chatses);
+        Collection<WeChat> chatses=wechatDao.getWeChats();
+        //model.addAllAttributes(chatses);
+        model.addAttribute("chatlist",chatses);
         return "wechatChats/list";
     }
 }

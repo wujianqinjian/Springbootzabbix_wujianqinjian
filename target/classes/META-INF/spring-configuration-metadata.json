@@ -1,0 +1,282 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "wechat.bean.Chats",
+      "name": "chats",
+      "type": "wechat.bean.Chats"
+    },
+    {
+      "sourceType": "wechat.bean.Contacts",
+      "name": "contacts",
+      "type": "wechat.bean.Contacts"
+    },
+    {
+      "sourceType": "wechat.bean.Discovers",
+      "name": "discovers",
+      "type": "wechat.bean.Discovers"
+    },
+    {
+      "sourceType": "wechat.bean.Me",
+      "name": "me",
+      "type": "wechat.bean.Me"
+    },
+    {
+      "sourceType": "traditional.bean.Person",
+      "name": "person",
+      "type": "traditional.bean.Person"
+    },
+    {
+      "sourceType": "wechat.bean.WeChat",
+      "name": "wechat",
+      "type": "wechat.bean.WeChat"
+    },
+    {
+      "sourceType": "wechat.beanothertest.WeChatOther",
+      "name": "wechats",
+      "type": "wechat.beanothertest.WeChatOther"
+    },
+    {
+      "sourceType": "wechat.beanothertest.WeChatplaceholder",
+      "name": "wechatsplaceholder",
+      "type": "wechat.beanothertest.WeChatplaceholder"
+    },
+    {
+      "sourceType": "zabbix.bean.Zabbix",
+      "name": "zabbix",
+      "type": "zabbix.bean.Zabbix"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "wechat.bean.Chats",
+      "name": "chats.image-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Chats",
+      "name": "chats.newest",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Chats",
+      "name": "chats.title",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Contacts",
+      "name": "contacts.image-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Contacts",
+      "name": "contacts.nick-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Discovers",
+      "name": "discovers.games",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Discovers",
+      "name": "discovers.mini-programs",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Discovers",
+      "name": "discovers.moments",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Discovers",
+      "name": "discovers.people-nearby",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Discovers",
+      "name": "discovers.scan",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Discovers",
+      "name": "discovers.search",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Discovers",
+      "name": "discovers.shake",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Discovers",
+      "name": "discovers.top-stories",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Me",
+      "name": "me.cards-and-offers",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Me",
+      "name": "me.favorites",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Me",
+      "name": "me.head-image",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Me",
+      "name": "me.my-posts",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Me",
+      "name": "me.settings",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Me",
+      "name": "me.sticker-gallery",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Me",
+      "name": "me.we-chat-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Me",
+      "name": "me.we-chat-nick-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "wechat.bean.Me",
+      "name": "me.we-chat-pay",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "traditional.bean.Person",
+      "name": "person.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "traditional.bean.Person",
+      "name": "person.birth",
+      "type": "java.util.Date"
+    },
+    {
+      "sourceType": "traditional.bean.Person",
+      "name": "person.boss",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "traditional.bean.Person",
+      "name": "person.dog",
+      "type": "traditional.bean.Dog"
+    },
+    {
+      "sourceType": "traditional.bean.Person",
+      "name": "person.last-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "traditional.bean.Person",
+      "name": "person.lists",
+      "type": "java.util.List<java.lang.String>"
+    },
+    {
+      "sourceType": "traditional.bean.Person",
+      "name": "person.maps",
+      "type": "java.util.Map<java.lang.String,java.lang.String>"
+    },
+    {
+      "sourceType": "wechat.bean.WeChat",
+      "name": "wechat.chats",
+      "type": "wechat.bean.Chats"
+    },
+    {
+      "sourceType": "wechat.bean.WeChat",
+      "name": "wechat.contacts",
+      "type": "wechat.bean.Contacts"
+    },
+    {
+      "sourceType": "wechat.bean.WeChat",
+      "name": "wechat.discovers",
+      "type": "wechat.bean.Discovers"
+    },
+    {
+      "sourceType": "wechat.bean.WeChat",
+      "name": "wechat.me",
+      "type": "wechat.bean.Me"
+    },
+    {
+      "sourceType": "wechat.beanothertest.WeChatOther",
+      "name": "wechats.chats",
+      "type": "wechat.bean.Chats"
+    },
+    {
+      "sourceType": "wechat.beanothertest.WeChatOther",
+      "name": "wechats.contacts",
+      "type": "wechat.bean.Contacts"
+    },
+    {
+      "sourceType": "wechat.beanothertest.WeChatOther",
+      "name": "wechats.discovers",
+      "type": "wechat.bean.Discovers"
+    },
+    {
+      "sourceType": "wechat.beanothertest.WeChatOther",
+      "name": "wechats.me",
+      "type": "wechat.bean.Me"
+    },
+    {
+      "sourceType": "wechat.beanothertest.WeChatOther",
+      "name": "wechats.tmptest",
+      "type": "java.util.List<java.lang.String>"
+    },
+    {
+      "sourceType": "wechat.beanothertest.WeChatplaceholder",
+      "name": "wechatsplaceholder.chats",
+      "type": "wechat.bean.Chats"
+    },
+    {
+      "sourceType": "wechat.beanothertest.WeChatplaceholder",
+      "name": "wechatsplaceholder.contacts",
+      "type": "wechat.bean.Contacts"
+    },
+    {
+      "sourceType": "wechat.beanothertest.WeChatplaceholder",
+      "name": "wechatsplaceholder.discovers",
+      "type": "wechat.bean.Discovers"
+    },
+    {
+      "sourceType": "wechat.beanothertest.WeChatplaceholder",
+      "name": "wechatsplaceholder.me",
+      "type": "wechat.bean.Me"
+    },
+    {
+      "sourceType": "wechat.beanothertest.WeChatplaceholder",
+      "name": "wechatsplaceholder.tmptest",
+      "type": "java.util.List<java.lang.String>"
+    },
+    {
+      "sourceType": "zabbix.bean.Zabbix",
+      "name": "zabbix.host",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "zabbix.bean.Zabbix",
+      "name": "zabbix.pass-word",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "zabbix.bean.Zabbix",
+      "name": "zabbix.user-name",
+      "type": "java.lang.String"
+    }
+  ]
+}

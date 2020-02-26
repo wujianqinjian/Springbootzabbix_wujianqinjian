@@ -1,0 +1,111 @@
+server:
+  port: 8087
+
+#person:
+#  lastName: wujianqinjian
+#  age: 18
+#  boss: false
+#  birth: 1988/11/06
+#  maps:
+#    {k1: ss,k2: ss}
+#  lists:
+#     - wujianqinjianListOne
+#     - wujianqinjianListSecond
+#     - wujianqinjianListThird
+#  dog:
+#    name: wangcai
+#    age: 1
+spring:
+  profiles: online
+  redis:
+    host: newdsd
+---
+server:
+  port: 8082
+
+spring:
+  profiles: test
+
+---
+
+server:
+  port: 8083
+spring:
+  profiles: dev
+
+#logging:
+#  level: {
+#           root: "trace"
+#  }
+
+
+
+#wechat:
+#  chats:
+#    imageUrl:  url1${random.int}
+#    title: ${wechat.chats.imageUrl}_title1${wechat.chats.imagUrl:消息错误}
+#    newest: ${sksk:"这个变量有错吧,微信最多应该只显示":}${random.int(99)}条消息
+#  contacts:
+#    imageUrl: ${random.value}contact1
+#    nickName: ${random.int(2222)}fanrui
+#  discovers:
+#    moments: ${random.long(999)}moments
+#  me:
+#    weChatNickName: .
+#    getWeChatId: miao***
+#    weChatPay: weChatPay
+#    favorites: favorites
+#    myPosts: myPosts
+#    cardsAndOffers: cardsAndOffers
+#    stickerAndGallery: stickerAndGallery
+#    settings: setting
+#spring:
+#  profiles:
+#    active: dev
+#
+#
+#---
+#wechat:
+#  chats:
+#    imageUrl:  url2222${random.int}
+#    title: ${wechat.chats.imageUrl}_title1${wechat.chats.imagUrl:消息错误}
+#    newest: ${sksk:"这个变量有错吧,微信最多应该只显示":}${random.int(99)}条消息
+#  contacts:
+#    imageUrl: ${random.value}contact1
+#    nickName: ${random.int(2222)}fanrui
+#  discovers:
+#    moments: ${random.long(999)}moments
+#  me:
+#    weChatNickName: .
+#    getWeChatId: miao***
+#    weChatPay: weChatPay
+#    favorites: favorites
+#    myPosts: myPosts
+#    cardsAndOffers: cardsAndOffers
+#    stickerAndGallery: stickerAndGallery
+#    settings: setting
+#spring:
+#  profiles: dev
+#
+#---
+#wechat:
+#  chats:
+#    imageUrl:  url3${random.int}
+#    title: ${wechat.chats.imageUrl}_title1${wechat.chats.imagUrl:消息错误}
+#    newest: ${sksk:"这个变量有错吧,微信最多应该只显示":}${random.int(99)}条消息
+#  contacts:
+#    imageUrl: ${random.value}contact1
+#    nickName: ${random.int(2222)}fanrui
+#  discovers:
+#    moments: ${random.long(999)}moments
+#  me:
+#    weChatNickName: .
+#    getWeChatId: miao***
+#    weChatPay: weChatPay
+#    favorites: favorites
+#    myPosts: myPosts
+#    cardsAndOffers: cardsAndOffers
+#    stickerAndGallery: stickerAndGallery
+#    settings: setting
+#spring
+#  profiles: test

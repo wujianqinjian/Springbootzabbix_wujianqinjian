@@ -19,9 +19,16 @@ public class WeChat {
     private Chats chats;
     private Contacts contacts;
     private Discovers discovers;
-
     private Me me;
 
+    public WeChat(){}
+
+    public WeChat(Chats chats, Contacts contacts, Discovers discovers, Me me) {
+        this.chats = chats;
+        this.contacts = contacts;
+        this.discovers = discovers;
+        this.me = me;
+    }
 
     @Override
     public String toString() {

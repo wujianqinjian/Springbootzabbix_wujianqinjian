@@ -16,6 +16,19 @@ public class Discovers {
     private String games;
     private String miniPrograms;
 
+    public Discovers(){}
+
+    public Discovers(String moments, String scan, String shake, String topStories, String search, String peopleNearby, String games, String miniPrograms) {
+        this.moments = moments;
+        this.scan = scan;
+        this.shake = shake;
+        this.topStories = topStories;
+        this.search = search;
+        this.peopleNearby = peopleNearby;
+        this.games = games;
+        this.miniPrograms = miniPrograms;
+    }
+
     @Override
     public String toString() {
         return "Discovers{" +

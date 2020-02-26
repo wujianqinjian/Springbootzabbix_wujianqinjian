@@ -6,8 +6,9 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties(prefix = "me")
 public class Me {
+    private String WeChatId;
     private String weChatNickName;
-    private String getWeChatId;
+    private String headImage;
     private String weChatPay;
     private String favorites;
     private String myPosts;
@@ -15,11 +16,26 @@ public class Me {
     private String stickerGallery;
     private String settings;
 
+    public Me(){}
+
+    public Me(String weChatId, String weChatNickName, String headImage, String weChatPay, String favorites, String myPosts, String cardsAndOffers, String stickerGallery, String settings) {
+        WeChatId = weChatId;
+        this.weChatNickName = weChatNickName;
+        this.headImage = headImage;
+        this.weChatPay = weChatPay;
+        this.favorites = favorites;
+        this.myPosts = myPosts;
+        this.cardsAndOffers = cardsAndOffers;
+        this.stickerGallery = stickerGallery;
+        this.settings = settings;
+    }
+
     @Override
     public String toString() {
         return "Me{" +
-                "weChatNickName='" + weChatNickName + '\'' +
-                ", getWeChatId='" + getWeChatId + '\'' +
+                "WeChatId='" + WeChatId + '\'' +
+                ", weChatNickName='" + weChatNickName + '\'' +
+                ", headImage='" + headImage + '\'' +
                 ", weChatPay='" + weChatPay + '\'' +
                 ", favorites='" + favorites + '\'' +
                 ", myPosts='" + myPosts + '\'' +
@@ -27,6 +43,14 @@ public class Me {
                 ", stickerGallery='" + stickerGallery + '\'' +
                 ", settings='" + settings + '\'' +
                 '}';
+    }
+
+    public String getWeChatId() {
+        return WeChatId;
+    }
+
+    public void setWeChatId(String weChatId) {
+        WeChatId = weChatId;
     }
 
     public String getWeChatNickName() {
@@ -37,12 +61,12 @@ public class Me {
         this.weChatNickName = weChatNickName;
     }
 
-    public String getGetWeChatId() {
-        return getWeChatId;
+    public String getHeadImage() {
+        return headImage;
     }
 
-    public void setGetWeChatId(String getWeChatId) {
-        this.getWeChatId = getWeChatId;
+    public void setHeadImage(String headImage) {
+        this.headImage = headImage;
     }
 
     public String getWeChatPay() {

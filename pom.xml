@@ -33,6 +33,7 @@
     <properties>
         <thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>
         <thymeleaf-layout-dialet.version>2.2.2</thymeleaf-layout-dialet.version>
+        <skipTests>true</skipTests>
     </properties>
     <dependencies>
         <dependency>
