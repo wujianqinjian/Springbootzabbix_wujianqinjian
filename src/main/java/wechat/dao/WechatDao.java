@@ -16,6 +16,13 @@ public class WechatDao {
 
     private static Map<Integer, WeChat> weChats=null;
 
+/*
+    public static void save(WeChat weChat){
+            Integer integer=weChats.size();
+            integer=integer+1;
+            weChats.put(integer,weChat);
+    }*/
+
     static {
         weChats=new HashMap<Integer, WeChat>();
         //public WeChat(Chats chats, Contacts contacts, Discovers discovers, Me me) {
