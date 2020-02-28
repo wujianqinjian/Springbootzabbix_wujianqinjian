@@ -26,7 +26,9 @@ public class WechatConfig implements WebMvcConfigurer {
         registry.addViewController("/").setViewName("login");
         registry.addViewController("/login").setViewName("login");
         registry.addViewController("/chatsAdmin").setViewName("chatsmessage");
-        registry.addViewController("/wechatChats").setViewName("list");
+        //下面这两个似乎没有啥作用
+        registry.addViewController("/weChats").setViewName("list");
+        registry.addViewController("/weChat").setViewName("add");
     }
 
     @Bean

@@ -12,6 +12,7 @@ import wechat.dao.WechatDao;
 
 @SpringBootApplication
 public class HelloWeChatS {
+    //wechatChats
     @Autowired
     WeChat weChat;
     WeChatOther weChatOther;

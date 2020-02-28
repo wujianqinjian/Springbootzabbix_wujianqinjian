@@ -19,6 +19,10 @@ spring:
   profiles: online
   redis:
     host: newdsd
+
+logging:
+   path: /logs/
+   file: ${logging.path}springboot
 ---
 server:
   port: 8082
