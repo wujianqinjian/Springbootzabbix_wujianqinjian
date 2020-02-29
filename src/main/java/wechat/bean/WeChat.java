@@ -2,6 +2,7 @@ package wechat.bean;
 
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
@@ -19,6 +20,7 @@ public class WeChat {
     private Chats chats;
     private Contacts contacts;
     private Discovers discovers;
+
     private Me me;
 
     public WeChat(){}

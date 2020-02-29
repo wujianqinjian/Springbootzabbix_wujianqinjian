@@ -29,6 +29,7 @@ public class WechatConfig implements WebMvcConfigurer {
         //下面这两个似乎没有啥作用
         registry.addViewController("/weChats").setViewName("list");
         registry.addViewController("/weChat").setViewName("add");
+        //registry.addViewController("/wechat").setViewName("list");
     }
 
     @Bean

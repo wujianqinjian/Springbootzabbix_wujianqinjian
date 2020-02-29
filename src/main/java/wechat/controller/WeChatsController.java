@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import wechat.bean.Me;
 import wechat.bean.WeChat;
-import wechat.crud.dao.ChatsDao;
+import wechat.dao.ChatsDao;
 import wechat.dao.MeDao;
 import wechat.dao.WechatDao;
 
@@ -17,8 +17,8 @@ import java.util.Collection;
 @Controller
 public class WeChatsController {
 
-   /* @Autowired
-    MeDao meDao;*/
+    @Autowired
+    MeDao meDao;
     @Autowired
     ChatsDao chatsDao;
     @Autowired
@@ -34,13 +34,21 @@ public class WeChatsController {
     }
 
 
-   //添加用户
+   //跳转到添加用户页面
+    @GetMapping("weChat")
+    public String toAddWeChat(Model model){
+        Collection<Me> weChatsC=meDao.getMes();
+
+        Collection<Me> mes=meDao.getMes();
+        model.addAttribute("mes",mes);
+        return "weChats/add";
+    }
+
+    //添加真正的员工
     @PostMapping("weChat")
     public String addWeChat(WeChat weChat){
-        Collection<WeChat> weChatsC=wechatDao.getWeChats();
-
-        /*Collection<Me> mes=meDao.getWeChats();*/
-        /*model.addAttribute("mes",mes);*/
+        wechatDao.save(weChat);
         return "redirect:/weChats";
     }
+
 }

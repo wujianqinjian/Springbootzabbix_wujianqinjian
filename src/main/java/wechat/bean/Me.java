@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties(prefix = "me")
 public class Me {
-    private String WeChatId;
+    private String weChatId;
     private String weChatNickName;
     private String headImage;
     private String weChatPay;
@@ -18,22 +18,10 @@ public class Me {
 
     public Me(){}
 
-    public Me(String weChatId, String weChatNickName, String headImage, String weChatPay, String favorites, String myPosts, String cardsAndOffers, String stickerGallery, String settings) {
-        WeChatId = weChatId;
-        this.weChatNickName = weChatNickName;
-        this.headImage = headImage;
-        this.weChatPay = weChatPay;
-        this.favorites = favorites;
-        this.myPosts = myPosts;
-        this.cardsAndOffers = cardsAndOffers;
-        this.stickerGallery = stickerGallery;
-        this.settings = settings;
-    }
-
     @Override
     public String toString() {
         return "Me{" +
-                "WeChatId='" + WeChatId + '\'' +
+                "weChatId='" + weChatId + '\'' +
                 ", weChatNickName='" + weChatNickName + '\'' +
                 ", headImage='" + headImage + '\'' +
                 ", weChatPay='" + weChatPay + '\'' +
@@ -45,12 +33,24 @@ public class Me {
                 '}';
     }
 
+    public Me(String weChatId, String weChatNickName, String headImage, String weChatPay, String favorites, String myPosts, String cardsAndOffers, String stickerGallery, String settings) {
+        this.weChatId = weChatId;
+        this.weChatNickName = weChatNickName;
+        this.headImage = headImage;
+        this.weChatPay = weChatPay;
+        this.favorites = favorites;
+        this.myPosts = myPosts;
+        this.cardsAndOffers = cardsAndOffers;
+        this.stickerGallery = stickerGallery;
+        this.settings = settings;
+    }
+
     public String getWeChatId() {
-        return WeChatId;
+        return weChatId;
     }
 
     public void setWeChatId(String weChatId) {
-        WeChatId = weChatId;
+        this.weChatId = weChatId;
     }
 
     public String getWeChatNickName() {

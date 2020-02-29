@@ -1,5 +1,6 @@
 package wechat.dao;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import wechat.bean.*;
 
@@ -8,9 +9,19 @@ import java.util.HashMap;
 import java.util.Map;
 import wechat.bean.Chats;
 
+import javax.sound.midi.Soundbank;
+
 //这里的注释需要注意一下，如果确实会  equired a bean of type 'wechat.dao.classname' that could not be found
 @Service
 public class WechatDao {
+
+
+    @Autowired
+    private MeDao meDao;
+    @Autowired
+    private Me me;
+    @Autowired
+    private WeChat weChat;
 
     public WechatDao(){}
 
@@ -43,7 +54,47 @@ public class WechatDao {
 
     }
 
+    private static String initweChatId = "getWeChatId";
 
+
+    //添加新用户
+    public void save(WeChat weChat){
+
+        if(me.getWeChatId() == null){
+            int i=weChats.size()+1;
+            initweChatId=initweChatId+i;
+            me.setWeChatId(initweChatId);
+
+        }
+        weChat.setMe(meDao.getMe(me.getWeChatId()));
+        weChats.put(weChats.size()+1, weChat);
+
+
+    }
+
+/*
+
+    public void save(WeChat weChat){
+        System.out.println(weChats.size());
+        Integer weChatsSize=weChats.size();
+        Integer ids=weChatsSize+1;
+        String initweChatId = "getWeChatId";
+        if(me.getWeChatId() != null){
+            Integer new1=Integer.parseInt(me.getWeChatId().substring(-1,0));
+            initweChatId=initweChatId+ids;
+            me.setWeChatId(initweChatId);
+        }
+        weChat.setMe(meDao.getMe(me.getWeChatId()));
+        weChats.put(weChatsSize+1, weChat);
+        System.out.println(weChats.size());
+    }
+*/
+
+
+
+    
+    
+    
 
     public Collection<WeChat> getWeChats(){
         return weChats.values();
