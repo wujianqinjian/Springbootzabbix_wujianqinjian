@@ -27,12 +27,6 @@ public class WechatDao {
 
     private static Map<Integer, WeChat> weChats=null;
 
-/*
-    public static void save(WeChat weChat){
-            Integer integer=weChats.size();
-            integer=integer+1;
-            weChats.put(integer,weChat);
-    }*/
 
     static {
         weChats=new HashMap<Integer, WeChat>();
@@ -51,68 +45,27 @@ public class WechatDao {
                 new Contacts("urlC2","nickName2"),
                 new Discovers("moments2","scan2","shake2","topStories2","search2","peopleNearby2","games2","miniPrograms2"),
                 new Me("getWeChatId2","weChatNickName2","headImage1","weChatPay2","favorites2","myPosts2","cardsAndOffers2","stickerGallery2","settings2")));
-
     }
 
     private static String initweChatId = "getWeChatId";
 
-
     //添加新用户
     public void save(WeChat weChat){
-
         if(me.getWeChatId() == null){
             int i=weChats.size()+1;
             initweChatId=initweChatId+i;
             me.setWeChatId(initweChatId);
-
         }
         weChat.setMe(meDao.getMe(me.getWeChatId()));
         weChats.put(weChats.size()+1, weChat);
-
-
     }
-
-/*
-
-    public void save(WeChat weChat){
-        System.out.println(weChats.size());
-        Integer weChatsSize=weChats.size();
-        Integer ids=weChatsSize+1;
-        String initweChatId = "getWeChatId";
-        if(me.getWeChatId() != null){
-            Integer new1=Integer.parseInt(me.getWeChatId().substring(-1,0));
-            initweChatId=initweChatId+ids;
-            me.setWeChatId(initweChatId);
-        }
-        weChat.setMe(meDao.getMe(me.getWeChatId()));
-        weChats.put(weChatsSize+1, weChat);
-        System.out.println(weChats.size());
-    }
-*/
-
-
-
-    
-    
-    
 
     public Collection<WeChat> getWeChats(){
         return weChats.values();
     }
 
-
     public WeChat getWeChats(Integer id){
         return weChats.get(id);
     }
 
-
-
-/*
-    new Chats(),new Contacts(),new Discovers(),new Me()
-    public WeChat(Chats chats, Contacts contacts, Discovers discovers, Me me) {
-        this.chats = chats;
-        this.contacts = contacts;
-        this.discovers = discovers;
-        this.me = me;
-    }*/
 }

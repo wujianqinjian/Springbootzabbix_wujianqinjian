@@ -21,10 +21,6 @@ public class HelloWeChat {
     WeChat weChat;
 
 
- /*   @Value("${wxtestmessage}")
-    private String wxtestmessage;*/
-
-
     @ResponseBody
     @RequestMapping("/helloWechat")
     public String sayHello() throws Exception {
@@ -51,6 +47,5 @@ public class HelloWeChat {
     public String fanta(){
         return "fanta";
     }
-
 
 }
