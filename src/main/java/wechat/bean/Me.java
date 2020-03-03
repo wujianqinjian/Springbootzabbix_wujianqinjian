@@ -18,7 +18,15 @@ public class Me {
 
     public Me(){}
 
-    @Override
+    public Me(String weChatId, String weChatNickName, String headImage) {
+        this.weChatId = weChatId;
+        this.weChatNickName = weChatNickName;
+        this.headImage = headImage;
+    }
+
+
+
+         @Override
     public String toString() {
         return "Me{" +
                 "weChatId='" + weChatId + '\'' +

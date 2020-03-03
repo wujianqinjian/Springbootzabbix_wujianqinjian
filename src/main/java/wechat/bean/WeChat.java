@@ -10,38 +10,43 @@ import org.springframework.validation.annotation.Validated;
 
 
 @Component
-//confiugurationProperties(prefix="person")
-//仅仅开启了自动配置，如果想读取到propertySource中的配置文件，
-//必须ConfigurationProperties和PropertySource同时声明
 @ConfigurationProperties(prefix="wechat")
 @PropertySource("classpath:config/wechat.properties")
 @Validated
 public class WeChat {
+    private Integer id;
     private Chats chats;
     private Contacts contacts;
     private Discovers discovers;
-
     private Me me;
-
     public WeChat(){}
 
-    public WeChat(Chats chats, Contacts contacts, Discovers discovers, Me me) {
+    @Override
+    public String toString() {
+        return "WeChat{" +
+                "id=" + id +
+                ", chats=" + chats +
+                ", contacts=" + contacts +
+                ", discovers=" + discovers +
+                ", me=" + me +
+                '}';
+    }
+
+    public WeChat(Integer id, Chats chats, Contacts contacts, Discovers discovers, Me me) {
+        this.id = id;
         this.chats = chats;
         this.contacts = contacts;
         this.discovers = discovers;
         this.me = me;
     }
 
-    @Override
-    public String toString() {
-        return "WeChat{" +
-                "chats=" + chats +"\n"+
-                ", contacts=" + contacts +"\n"+
-                ", discovers=" + discovers +"\n"+
-                ", me=" + me+"\n" +
-                '}';
+    public Integer getId() {
+        return id;
     }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public Chats getChats() {
         return chats;

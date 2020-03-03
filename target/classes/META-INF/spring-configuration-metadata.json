@@ -210,6 +210,11 @@
     },
     {
       "sourceType": "wechat.bean.WeChat",
+      "name": "wechat.id",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "wechat.bean.WeChat",
       "name": "wechat.me",
       "type": "wechat.bean.Me"
     },

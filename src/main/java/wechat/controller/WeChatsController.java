@@ -27,25 +27,26 @@ public class WeChatsController {
     //获取所有用户
     @GetMapping("/weChats")
     public String list(Model model){
-        Collection<WeChat> chatses=wechatDao.getWeChats();
+        Collection<WeChat> chatses=wechatDao.getAll();
         //model.addAllAttributes(chatses);
-        model.addAttribute("chatlist",chatses);
+        model.addAttribute("weChats",chatses);
         return "weChats/list";
     }
 
 
    //跳转到添加用户页面
-    @GetMapping("weChat")
+    @GetMapping("/weChat")
     public String toAddWeChat(Model model){
-        Collection<Me> weChatsC=meDao.getMes();
+        //Collection<Me> weChatsC=meDao.getMes();
 
         Collection<Me> mes=meDao.getMes();
         model.addAttribute("mes",mes);
+
         return "weChats/add";
     }
 
     //添加真正的员工
-    @PostMapping("weChat")
+    @PostMapping("/weChat")
     public String addWeChat(WeChat weChat){
         wechatDao.save(weChat);
         return "redirect:/weChats";
